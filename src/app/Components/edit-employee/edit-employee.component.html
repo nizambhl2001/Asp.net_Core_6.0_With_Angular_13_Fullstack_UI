@@ -1,0 +1,36 @@
+<div class="container my-5">
+    <div class="row">
+     <div class="col-md-6">
+         <form (ngSubmit)="updateEmployeeById()">
+            <div class="mb-3">
+                <label for="id">Id</label>
+                <input type="text" class="form-control" name="id" id="name" [(ngModel)]="employeeUpdaterequest.id">
+            </div>
+             <div class="mb-3">
+                 <label for="name">Name</label>
+                 <input type="text" class="form-control" name="name" id="name" [(ngModel)]="employeeUpdaterequest.name">
+             </div>
+             <div class="mb-3">
+                 <label for="email">Email</label>
+                 <input type="email" class="form-control" name="email" id="email" [(ngModel)]="employeeUpdaterequest.email">
+             </div>
+             <div class="mb-3">
+                 <label for="phone">Phone</label>
+                 <input type="number" class="form-control" name="phone" id="phone" [(ngModel)]="employeeUpdaterequest.phone">
+             </div>
+             <div class="mb-3">
+                 <label for="salary">Salary</label>
+                 <input type="number" class="form-control" name="salary" id="salary" [(ngModel)]="employeeUpdaterequest.salary">
+             </div>
+             <div class="mb-3">
+                 <label for="department">Department</label>
+                 <input type="text" class="form-control" name="department" id="department" [(ngModel)]="employeeUpdaterequest.department">
+             </div>
+             <button type="submit" class="btn btn-primary">Update</button>
+             <button type="button" class="btn btn-danger" (click)="DeleteEmp(employeeUpdaterequest.id)">Delete</button>
+
+         </form>
+     </div>
+    </div>
+ </div>
+ 
